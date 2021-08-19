@@ -1,0 +1,106 @@
+@import url("vendor/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+.persons {
+    background: #F4F6F9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cards {
+    max-width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card {
+    max-width: 255px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0 30px 30px 0;
+    transition: .3s;
+}
+
+.card:hover {
+    box-shadow: 5px 7px 10px rgba(144, 161, 172, 0.25);
+    transform: translateY(-10px);
+    transition: .3s;
+}
+
+.card_big {
+    max-width: 100%;
+    width: calc(270px * 2);
+    margin-right: 0;
+    display: flex;
+}
+
+.card_big:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+.card:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.card__avatar {
+    max-width: 160px;
+    margin: 35px 47px 22px 47px;
+}
+
+.card__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #303030;
+}
+
+.card__description {
+    color: #90a1ac;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.card__wrapper {
+    max-width: 475px;
+    margin: auto;
+}
+
+.card__description_big {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #303030;
+    padding-bottom: 0;
+}
+
+.card__button {
+    display: flex;
+    border: none;
+    border-radius: 30px;
+    padding: 19px 30px;
+    background: #ff0050;
+    color: #fff;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin: 27px auto 0 auto;
+}
